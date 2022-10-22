@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/b98405c5eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/b98405c5eb.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="logoContainer">
+            <div id="logo">
+                <i class="fa-solid fa-guitar"></i>
+            </div>
+            <div id="logoName">
+                <span>Yours</span>
+                <br>
+                <span><b>Studio</b></span>
+            </div>
+        </div>
+        <div>
+            <p style="font-size: 1.3rem; font-weight:bold">Favourites</p>
+        </div>
+        <div id="searchDiv">
+            <label for="searchBar"><i class="fa-brands fa-searchengin"></i></label>
+            <input type="text" placeholder="Search here" id="searchBar">
+            <label for="searchBar"><i class="fa-solid fa-microphone"></i></label>
+
+            
+        </div>
+        <div id="notification">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div id="login">
+            <i class="fa-solid fa-user-tie"></i>
+        </div>
+    </header>
+    <main>
+        <!-- The first three image section starts here -->
+        <h3 style="color: white; margin-top: -30px;">Trending</h3>
+       <div id="imgContainer">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/study-relax-music-youtube-thumbnail-design-template-13331d3452197585d875057d240a8636_screen.jpg?ts=1588453313" alt="">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/work-relaxing-music-youtube-thumbnail-design-template-13051ed91cddf34a9bdbe6b36305eba1_screen.jpg?ts=1588456331" alt="">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/relaxing-music-mix-youtube-thumbnail-design-template-10e0ab24e854fd9ab2d05f1356e7668f_screen.jpg?ts=1599435027" alt="">
+       </div>
+       <!-- The first three image section ends here -->
+        <div id="latestReleaseContainer">
+            <h3 style="color: white;">Latest Release</h3>
+            <div id="latestReleaseContents">
+                <div class="individual">
+                    <div class="imgContainer">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/music-cover-song-thumbnail-design-template-e0f4ef858c0ccd070bbe792f3e9ce8b6_screen.jpg?ts=1591420348" alt="">
+                    </div>
+                    <div>
+                        <b>LR 1</b>
+                        <br>
+                        <b>Oct,2022</b>
+                    </div>
+                    <div class="aboutContainer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <div id="hoverContainer">
+                            <span><i class="fa-solid fa-play"></i> &nbspPlay Now</span>
+                            <span><i class="fa-solid fa-plus"></i> &nbspAdd To Queue</span>
+                            <span><i class="fa-regular fa-calendar-plus"></i> &nbspAdd To Favourite</span>
+                            <span><i class="fa-solid fa-circle-info"></i> &nbspGet Info</span>
+                        </div>
+                        <b>4:52</b>
+                    </div>
+                </div>
+                <div class="individual">
+                    <div class="imgContainer">
+                        <img src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/601d3007cc4ec_json_image_1612525575.webp" alt="">
+                    </div>
+                    <div>
+                        <b>LR 2</b>
+                        <br>
+                        <b>Sep,2022</b>
+                    </div>
+                    <div class="aboutContainer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <div id="hoverContainer">
+                            <span><i class="fa-solid fa-play"></i> &nbspPlay Now</span>
+                            <span><i class="fa-solid fa-plus"></i> &nbspAdd To Queue</span>
+                            <span><i class="fa-regular fa-calendar-plus"></i> &nbspAdd To Favourite</span>
+                            <span><i class="fa-solid fa-circle-info"></i> &nbspGet Info</span>
+                        </div>
+                        <b>3:35</b>
+                    </div>
+                </div>
+                <div class="individual">
+                    <div class="imgContainer">
+                        <img src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/601d2f0125f9c_json_image_1612525313.webp" alt="">
+                    </div>
+                    <div>
+                        <b>LR 3</b>
+                        <br>
+                        <b>Aug,2022</b>
+                    </div>
+                    <div class="aboutContainer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <div id="hoverContainer">
+                            <span><i class="fa-solid fa-play"></i> &nbspPlay Now</span>
+                            <span><i class="fa-solid fa-plus"></i> &nbspAdd To Queue</span>
+                            <span><i class="fa-regular fa-calendar-plus"></i> &nbspAdd To Favourite</span>
+                            <span><i class="fa-solid fa-circle-info"></i> &nbspGet Info</span>
+                        </div>
+                        <b>4:43</b>
+                    </div>
+                </div>
+                <div class="individual">
+                    <div class="imgContainer">
+                        <img src="https://d3jmn01ri1fzgl.cloudfront.net/photoadking/webp_thumbnail/60eecf515b33a_json_image_1626263377.webp" alt="">
+                    </div>
+                    <div>
+                        <b>LR 4</b>
+                        <br>
+                        <b>Jul,2022</b>
+                    </div>
+                    <div class="aboutContainer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <div id="hoverContainer">
+                            <span><i class="fa-solid fa-play"></i> &nbspPlay Now</span>
+                            <span><i class="fa-solid fa-plus"></i> &nbspAdd To Queue</span>
+                            <span><i class="fa-regular fa-calendar-plus"></i> &nbspAdd To Favourite</span>
+                            <span><i class="fa-solid fa-circle-info"></i> &nbspGet Info</span>
+                        </div>
+                        <b>3:58</b>
+                    </div>
+                </div>
+        
+            </div>
+        </div>  
+<!-- Latest release container ends here -->
+
+<!-- Popular Artist section starts here -->
+<h3 style="color: white;">Popular Artist</h3>
+    <div id="popularArtist">
+       
+        <div class="individual">
+            <div>
+                <a href="lataJi.html" target="_blank"><img src="https://wd-image.webdunia.com/image-conversion/process-aws.php?url=https://nonprod-media.webdunia.com/public_html/_media/hi/img/article/2019-11/16/full/1573912009-177.jpg&w=&h=&outtype=webp" alt=""></a>
+                <span>Lata Ji</span>
+            </div>
+        </div>
+        <div class="individual">
+            <div>
+                <a href="arRahman.html" target="_blank"><img src="https://i0.wp.com/www.eastmojo.com/wp-content/uploads/2022/01/ar-rahman.jpg?fit=1200%2C900&ssl=1" alt=""></a>
+                <span>A. R. Rahman</span>
+            </div>
+        </div>
+        <div class="individual">
+            <div>
+                <a href="sonuNigam.html" target="_blank"><img src="https://images.indianexpress.com/2017/06/sonu-nigam-759.jpg" alt=""></a>
+                <span>Sonu Nigam</span>
+            </div>
+        </div>
+        <div class="individual">
+            <div>
+                <a href="mohitChauhan.html" target="_blank"><img src="https://i.scdn.co/image/ab6761610000e5eb16691117e2ba803946b203ba" alt=""></a>
+                <span>Mohit Chauhan</span>
+            </div>
+        </div>
+        <div class="individual">
+            <div>
+                <a href="shreyaGhosal.html" target="_blank"><img src="https://ik.imagekit.io/j83rchiauw/A_List_Star/shreya-ghoshal-biography-tring.jpg?tr=q-100,e-sharpen" alt=""></a>
+                <span>Shreya Ghosal</span>
+            </div>
+        </div>
+        <div class="individual">
+            <div>
+                <a href="arijitSingh.html" target="_blank"><img src="https://static.toiimg.com/thumb/msid-92037952,imgsize-,width-641,resizemode-4/92037952.jpg" alt=""></a>
+                <span>Arijit Singh</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- popular artist section ends here -->
+
+    <!--  station specific section starts here-->
+    <h3 style="color: white;">Station Specific</h3>
+    <div id="stationContainer">
+        <div class="individual">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/41db29128773439.Y3JvcCwzMDAwLDIzNDYsMCwzMjY.jpg" alt="">
+            <p class="station">Station</p>
+        </div>
+        <div class="individual">
+            <img src="https://cdn.pixabay.com/photo/2018/08/03/04/36/couple-3581038__340.jpg" alt="">
+            <p class="station">Love</p>
+        </div>
+        <div class="individual">
+            <img src="https://w0.peakpx.com/wallpaper/941/157/HD-wallpaper-rythem-pleasant-joy-refreshing-mood.jpg" alt="">
+            <p class="station">Chill</p>
+        </div>
+        <div class="individual">
+            <img src="https://thumbs.dreamstime.com/b/closeup-portrait-muscular-man-workout-barbell-gym-brutal-bodybuilder-athletic-six-pack-perfect-abs-shoulders-55122231.jpg" alt="">
+            <p class="station">Workout</p>
+        </div>
+        <div class="individual">
+            <img src="https://cdn.lifehack.org/wp-content/uploads/2015/09/rock-music-wallpapers.jpg" alt="">
+            <p class="station">Rock</p>
+        </div>
+        <div class="individual">
+            <img src="https://musicindustryhowtoimages.s3.amazonaws.com/wp-content/uploads/2022/03/06100159/What-Is-Rock-Music.jpg" alt="">
+            <p class="station">Pop</p>
+        </div>
+
+    </div>
+    <!-- Station section ends here -->
+
+
+    <!-- Mood specific section starts here -->
+    <h3 style="color: white;">Change Your Mood</h3>
+    <div id="moodContainer">
+        <div class="individual">
+            <img src="https://seda.college/blog/wp-content/uploads/2018/06/party.jpg" alt="">
+            <p class="mood">Party</p>
+        </div>
+        <div class="individual">
+            <img src="https://media.istockphoto.com/photos/quantum-computing-concept-abstract-glowing-electronic-circuit-picture-id1186902469?k=20&m=1186902469&s=612x612&w=0&h=SNa0XsJ84fz8Vuevij9oFLKUnC2Qn1I3pXYVJXLsLWE=" alt="">
+            <p class="mood">Electronics</p>
+        </div>
+        <div class="individual">
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1165635794.jpg" alt="">
+            <p class="mood">Road Trip</p>
+        </div>
+
+    </div>
+
+    <!-- mood specific section ends here -->
+
+
+    <!-- Latest hindi section starts here -->
+    <h3 style="color: white;">Latest Hindi</h3>
+    <div class="latest">
+        <div>
+            <img src="https://www.ilyricshub.com/wp-content/uploads/2021/08/mann-bharrya-2-0-shershaah-b-praak.jpg" alt="">    
+        </div>
+
+        <div>
+            
+            <img src="https://i1.wp.com/atsecbihar.org/wp-content/uploads/2021/09/Webp.net-compress-image-2021-08-23T092451.716-1024x576-1.jpg?fit=1024%2C576&ssl=1" alt="">
+        </div>
+        <div>
+            <img src="https://i0.wp.com/www.hindiadda.com/wp-content/uploads/ha/2020/01/Saiyaara-Lyrics-Ek-Tha-Tiger-Mohit-Chauhan-Tarannum-Malik-scaled.jpg?fit=1024%2C576&ssl=1" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/_YG_tdQTOvM/maxresdefault.jpg" alt="">    
+        </div>
+
+        <div>
+            <img src="https://i.ytimg.com/vi/7HKbt19q3Rc/maxresdefault.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/wF_B_aagLfI/maxresdefault.jpg" alt="">
+        </div>
+
+    </div>
+    <!-- Latest hindi section ends here -->
+
+    <!-- latest english section starts here -->
+    <h3 style="color: white;">Latest English</h3>
+    <div class="latest">
+        <div>
+            <img src="https://i.ytimg.com/vi/U5mWY5ytZ6E/maxresdefault.jpg" alt="">    
+        </div>
+
+        <div>
+            
+            <img src="https://i.ytimg.com/vi/wIAccYkuJXA/maxresdefault.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/qAwureQaDIU/maxresdefault.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">    
+        </div>
+
+        <div>
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/summer-vibes-music-youtube-thumbnail-template-design-a653f46a5412e7598cbe5b4788ab595e_screen.jpg?ts=1599534397" alt="">
+        </div>
+        <div>
+            <img src="https://i.ytimg.com/vi/-YH2PK3aTuA/maxresdefault.jpg" alt="">
+        </div>
+
+    </div>
+    <!-- Latest english section ends here -->
+    </main>
+
+    <!-- Aside section starts here -->
+    <aside>
+        <div id="heading">
+            <span id="head1">Queue</span>
+            <span id="head2" >Queue <i  id="dropDown" class="fa-solid fa-caret-down"></i></span>
+            <div id="hiddenContents">
+                <span><i class="fa-brands fa-playstation"></i> &nbspPlaylist</span>
+                <!-- <br> -->
+                <!-- <hr> -->
+                <span><i class="fa-solid fa-star"></i> &nbspFavourite Songs</span>
+            </div>
+        </div>
+        <div id="allContents">
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>01</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>Mirage</b> <br>
+                        Else
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>02</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Favourites</b> <br>
+                        Of All time
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>03</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/marble.png" alt="">
+                    </div>
+
+                    <div>
+                        <b>Olden</b> <br>
+                        Days
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>04</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>All Time</b> <br>
+                        Hits
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>05</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Golden</b> <br>
+                        Era
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>06</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/marble.png" alt="">
+                    </div>
+
+                    <div>
+                        <b>Marble's</b> <br>
+                        Best
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>07</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>Mirage</b> <br>
+                        Else
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>08</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Best</b> <br>
+                        Remixed
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>09</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>Mirage</b> <br>
+                        Else
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>10</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Favourites</b> <br>
+                        Of All time
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>11</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/marble.png" alt="">
+                    </div>
+
+                    <div>
+                        <b>Olden</b> <br>
+                        Days
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>12</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>All Time</b> <br>
+                        Hits
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>13</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Golden</b> <br>
+                        Era
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>14</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/marble.png" alt="">
+                    </div>
+
+                    <div>
+                        <b>Marble's</b> <br>
+                        Best
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>15</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>Mirage</b> <br>
+                        Else
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>16</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Best</b> <br>
+                        Remixed
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>17</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/marble.png" alt="">
+                    </div>
+
+                    <div>
+                        <b>Marble's</b> <br>
+                        Best
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>18</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>Mirage</b> <br>
+                        Else
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>19</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Best</b> <br>
+                        Remixed
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>20</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/marble.png" alt="">
+                    </div>
+
+                    <div>
+                        <b>Marble's</b> <br>
+                        Best
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>21</b>
+                    </div>
+                    <div>
+                        <img src="https://pixelsao.com/wp-content/uploads/2020/09/roadtobeach.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <b>Mirage</b> <br>
+                        Else
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>22</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Best</b> <br>
+                        Remixed
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            
+        </div>
+
+    </aside>
+
+    <!-- footer section starts here -->
+
+    <footer>
+        <div class="individual">
+            <div class="combinedDetails">
+                <div class="details">
+                    <div>
+                        <b>05</b>
+                    </div>
+                    <div>
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/best-sounds-youtube-thumbnail-design-template-85480bd1188e032e59f3c626b9d6ea08_screen.jpg?ts=1570812176" alt="">
+                    </div>
+
+                    <div>
+                        <b>Golden</b> <br>
+                        Era
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+            </div>
+
+        </div>
+        <div class="individual" id="statusBar">
+            <div id="icons">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-pause"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-repeat"></i>
+            </div>
+            <div>
+                <input type="range">
+            </div>
+        </div>
+        <div class="individual" id="soundSection">
+            <i class="fa-solid fa-sliders"></i>
+            <i class="fa-solid fa-headphones"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+
+    </footer>
+    <!-- Footer ends here -->
+
+    
+    
+</body>
+
+</html>
